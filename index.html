@@ -108,12 +108,12 @@
     <!-- ════════════════════════════════════
          #1 환영의 섹션 · 단체 사진 (Apple 상세 페이지 레이아웃)
          ════════════════════════════════════ -->
-    <header class="relative -mt-12 bg-black text-white">
-      <div class="mx-auto w-full max-w-[430px] md:max-w-[1100px]">
+    <header class="relative -mt-12 flex min-h-screen flex-col bg-black text-white">
+      <div class="mx-auto flex w-full flex-1 flex-col max-w-[430px] md:max-w-[1100px]">
         <!-- 상단 풀블리드 사진 -->
-        <div class="relative md:pt-12">
+        <div class="relative flex-1 overflow-hidden md:pt-12">
           <img src="images/DSC07984.jpg" alt="성광교회 청년부 단체 사진"
-            class="w-full" />
+            class="h-full w-full object-cover" />
           <!-- 사진 → 텍스트 블록으로 자연스럽게 이어지는 그라디언트 -->
           <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black to-transparent md:h-28"></div>
           <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/60 to-transparent md:hidden"></div>
@@ -138,8 +138,8 @@
     <!-- ════════════════════════════════════
          BEFORE WORSHIP · 기도 사진
          ════════════════════════════════════ -->
-    <section class="py-14 md:py-28">
-      <div class="mx-auto w-full max-w-[430px] px-6 md:max-w-[1100px] md:px-10">
+    <section class="relative py-14 md:py-28 before:absolute before:inset-x-0 before:top-0 before:h-32 before:bg-gradient-to-b before:from-black before:to-white before:pointer-events-none before:content-[''] md:before:h-48">
+      <div class="relative z-10 mx-auto w-full max-w-[430px] px-6 md:max-w-[1100px] md:px-10">
       <p class="reveal text-[13px] font-semibold tracking-widest text-neutral-500 md:text-[17px]">BEFORE WORSHIP</p>
       <h2 class="reveal mt-2 text-[28px] font-bold leading-snug tracking-tight md:mt-4 md:text-[52px] md:leading-tight">
         "예배를 준비하는 마음"
